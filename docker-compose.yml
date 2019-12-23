@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  goodstart-auth:
+    image: goodstart-auth
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000

@@ -1,0 +1,9 @@
+sudo: required
+services: 
+    - docker
+
+before_install:
+    - docker build -t jasonsb/goodstart-auth -f Dockerfile.test .
+
+script:
+    - docker run jasonsb/goodstart-auth npm run test -- --coverage

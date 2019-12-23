@@ -1,24 +1,30 @@
-# ignore .git and .cache folders
-.git
-.gitignore
-.cache
 
-# ignore all markdown files 
-*.md
 
-# ignore non-compiled code
-*.ts
-*.d.ts
-/src
+############# PRODUCTION #############
 
-# ignore production config files
-tslint.json
-tsconfig.json
-tsconfig.build.json
-.prettierrc
-/node_modules
-Procfile
-nest-cli.json
+# # ignore .git and .cache folders
+# .git
+# .gitignore
+# .cache
 
-#other unecessary/info files
-tsconfig.build.tsbuildinfo
+# # ignore all markdown files 
+# *.md
+
+# # ignore non-compiled code
+# *.ts
+# *.d.ts
+# /src
+
+# # ignore development config files
+# tslint.json
+# tsconfig.json
+# tsconfig.build.json
+# .prettierrc
+# /node_modules
+# Procfile
+# nest-cli.json
+# .travis.yml
+
+# #other unecessary/info files
+# tsconfig.build.tsbuildinfo
+
