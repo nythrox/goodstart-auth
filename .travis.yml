@@ -1,6 +1,9 @@
-sudo: required
 services: 
     - docker
+
+language: node_js
+
+os: linux
 
 before_install:
     - docker build -t jasonsb/goodstart-auth:dev -f Dockerfile.dev .

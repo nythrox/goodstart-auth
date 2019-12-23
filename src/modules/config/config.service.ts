@@ -1,6 +1,9 @@
 import { Injectable, Global } from '@nestjs/common';
-import * as dotenv from 'dotenv';
+// import * as dotenv from 'dotenv';
+
 import * as fs from 'fs';
+
+const dotenv = require('dotenv').config();
 
 @Injectable()
 export class ConfigService {
