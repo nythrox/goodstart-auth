@@ -5,10 +5,16 @@ import * as fs from 'fs';
 
 @Injectable()
 export class ConfigService {
-  private readonly envConfig: Record<string, string>;
+  private readonly envConfig: Record<string, string> | any;
 
   constructor(filePath: string) {
-    this.envConfig = dotenv.parse(fs.readFileSync(filePath));
+    // .env file is available
+    try {
+      this.envConfig = dotenv.parse(fs.readFileSync(filePath));
+    } catch (e) {
+      this.envConfig = process.env;
+    }
+    console.log(this.envConfig);
   }
 
   get(key: string): string {

@@ -7,8 +7,7 @@ async function bootstrap(): Promise<void> {
   const app: INestApplication = await NestFactory.create(AppModule);
   app.enableCors();
   const configService: ConfigService = app.get(ConfigService);
-  const port: string | number = process.env.PORT || configService.port || 7000;
-  console.log(port);
+  const port: string | number = configService.port || process.env.PORT || 7000;
   await app.listen(port);
 }
 bootstrap();
