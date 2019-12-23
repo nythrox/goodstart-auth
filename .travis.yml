@@ -6,4 +6,4 @@ before_install:
     - docker build -t jasonsb/goodstart-auth -f Dockerfile.dev .
 
 script:
-    - docker run jasonsb/goodstart-auth npm run test -- --coverage
+    - docker run jasonsb/goodstart-auth npm run test -- --coverage --env-file .env
