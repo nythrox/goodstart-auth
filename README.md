@@ -1,3 +1,4 @@
+# Goodstart Auth [![Build Status](https://travis-ci.org/nythrox/goodstart-auth.svg?branch=master)](https://travis-ci.org/nythrox/goodstart-auth)
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
